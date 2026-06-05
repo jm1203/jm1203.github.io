@@ -46,3 +46,15 @@
   gtag('config', '{{ site.analytics.google.id }}');
 </script>
 {%- endif -%}
+
+<!-- Unregister old Chirpy Service Workers to prevent caching issues -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister();
+        console.log('Old ServiceWorker unregistered.');
+      }
+    });
+  }
+</script>

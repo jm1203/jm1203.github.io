@@ -5,8 +5,8 @@ nav:
 actions:
   toggle_theme: 테마 전환
 home:
-  title: P0LESTAR
-  subtitle: 내일의 내가 볼 오늘의 기록용 블로그
+  title: Jimin's Tech & Security Blog
+  subtitle: Engineering Multi-Cloud Logs & Space Asset Security
   empty: 아직 작성된 글이 없습니다.
 post:
   min_read: 분 읽기
